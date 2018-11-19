@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0" >
+
+	<properties>
+		<name>CoreRPG - Has Initiative Indicator</name>
+		<version>1.1</version>
+		<loadorder>99</loadorder>
+		<description>
+			<text>Displays a image overlay when a token has Initiative.</text>
+			<website></website>
+			<author>Celestian</author>
+		</description>
+	</properties>
+
+	<announcement text="Has Initiative Indicator v1.1, CoreRPG+ version.\rFor Fantasy Grounds" font="emotefont" icon="token_has_initiative" />
+
+	<base>		
+    <script name="HasInitiativeIndicator" file="scripts/manager_has_initiative.lua" />
+    <includefile source="graphics/graphics_has_initiative.xml" />
+  </base>
+    
+</root>
