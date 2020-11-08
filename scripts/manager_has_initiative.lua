@@ -34,7 +34,14 @@ function createWidget(tokenCT,nodeCT)
   widgetInitIndicator.setName("initiativeindicator");
   widgetInitIndicator.setTooltipText(sName .. " has initiative.");
   widgetInitIndicator.setPosition("top", 0, -2);
-  widgetInitIndicator.setSize(nWidth-20, nHeight-20);
+
+  if UtilityManager.isClientFGU() then
+    widgetInitIndicator.setSize(110, 110); -- 110% size (slightly bigger than token)
+  else
+	widgetInitIndicator.setSize(nWidth-20, nHeight-20);
+    --widgetInitIndicator.setSize(nWidth*3, nHeight*3);
+  end
+  
   return widgetInitIndicator;
 end
 
