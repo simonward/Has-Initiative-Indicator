@@ -5,7 +5,12 @@
 
 function onInit()
   if User.isHost() then
-    DB.addHandler("combattracker.list.*.active", "onUpdate", updateInititiativeIndicator);
+    if CombatManager.CT_COMBATANT_PATH then
+      -- Savage Worlds support
+      DB.addHandler(CombatManager.CT_COMBATANT_PATH .. ".active", "onUpdate", updateInititiativeIndicator);
+    else
+      DB.addHandler("combattracker.list.*.active", "onUpdate", updateInititiativeIndicator);
+    end
     updateAllInititiativeIndicators();
   end
 end
