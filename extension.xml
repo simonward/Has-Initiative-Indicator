@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - Has Initiative Indicator</name>
-		<version>1.5</version>
+		<version>1.6</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>Displays a image overlay when a token has Initiative.</text>
@@ -13,7 +13,7 @@
 		</description>
 	</properties>
 
-	<announcement text="Has Initiative Indicator v1.5 - CoreRPG+ version.\rBy Celestian, 2018" font="emotefont" icon="celestian" />
+	<announcement text="Has Initiative Indicator v1.6 - CoreRPG+ version.\rBy Celestian, 2018-2021" font="emotefont" icon="celestian" />
 
 	<base>		
 	<icon name="celestian" file="graphics/icons/celestian.png" />
